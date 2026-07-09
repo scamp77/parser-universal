@@ -1,0 +1,30 @@
+# parser-universal smoke config (Phase 4 — declarative pipeline).
+# `parser-cli run-config configs/smoke.yaml` runs full Layer 1-5 chain.
+
+adapter: gpx
+locator: tests/data/sample.gpx
+
+sink:
+  type: dryrun       # dryrun | postgres
+  table: entities    # postgres only
+
+enrichers: []        # available: brouter
+
+failure_sink: false  # postgres only
+daily_log: false     # postgres only
+
+fetcher:
+  persistent: true
+  strategies:
+    - httpx_persistent
+    - jina_fallback
+
+rate_limiter:
+  rate_per_sec: 2.0
+  burst: 4
+
+parallel:
+  workers: 1         # Phase 4 — 1 = sequential
+  batch_size: 32
+
+source_name: parser_universal_smoke

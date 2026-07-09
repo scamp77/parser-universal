@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="parser-universal-smoke" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata><name>Smoke Test GPX</name></metadata>
+  <wpt lat="55.7558" lon="37.6173"><name>Start</name><type>start</type></wpt>
+  <wpt lat="55.7700" lon="37.6500"><name>Finish</name><type>finish</type></wpt>
+  <trk>
+    <name>Loop</name>
+    <trkseg>
+      <trkpt lat="55.7558" lon="37.6173"/>
+      <trkpt lat="55.7600" lon="37.6300"/>
+      <trkpt lat="55.7700" lon="37.6500"/>
+    </trkseg>
+  </trk>
+</gpx>

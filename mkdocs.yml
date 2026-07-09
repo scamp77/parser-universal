@@ -1,0 +1,29 @@
+site_name: parser-universal
+site_description: Cross-project reusable parser framework (benz + sup-app)
+site_url: https://local/parser-universal
+repo_url: https://local/parser-universal
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - Architecture: architecture.md
+  - Adapter catalog: adapters.md
+  - Observability: observability.md
+  - Phase roadmap: roadmap.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+docs_dir: docs
