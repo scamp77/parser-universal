@@ -8,7 +8,6 @@ from __future__ import annotations
 import struct
 from datetime import datetime, timezone
 
-import pytest
 
 from parser_universal.media.exif import (
     _parse_iso6709,
